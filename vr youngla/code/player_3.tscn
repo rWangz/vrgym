@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjqdysdsyf5vg"]
+
+[ext_resource type="Texture2D" uid="uid://iccpndm4agys" path="res://Sprites/Player.png" id="1_nl1wc"]
+
+[node name="Player 3" type="Sprite2D"]
+modulate = Color(0.141176, 0.670588, 0.0588235, 1)
+position = Vector2(167, 78.5)
+rotation = -0.863938
+scale = Vector2(1.9534, 1.74739)
+texture = ExtResource("1_nl1wc")

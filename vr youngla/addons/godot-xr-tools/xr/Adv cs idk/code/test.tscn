@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://dquf8odcgbkbf"]
+
+[ext_resource type="PackedScene" uid="uid://b5w2rv1k3xp05" path="res://code/player.tscn" id="1_diduc"]
+[ext_resource type="PackedScene" uid="uid://bjqdysdsyf5vg" path="res://code/player_3.tscn" id="2_lp24c"]
+[ext_resource type="PackedScene" uid="uid://vd8jcl8dpkl1" path="res://code/player_2.tscn" id="3_l5t5t"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player2" parent="." instance=ExtResource("1_diduc")]
+position = Vector2(157, 603)
+
+[node name="Player3" parent="." instance=ExtResource("1_diduc")]
+position = Vector2(213, 427)
+
+[node name="Player4" parent="." instance=ExtResource("1_diduc")]
+position = Vector2(38, 384)
+
+[node name="Player5" parent="." instance=ExtResource("1_diduc")]
+position = Vector2(125, 474)
+
+[node name="Player6" parent="." instance=ExtResource("1_diduc")]
+position = Vector2(238, 582)
+
+[node name="Player 3" parent="." instance=ExtResource("2_lp24c")]
+position = Vector2(505, 634.5)
+
+[node name="Player 4" parent="." instance=ExtResource("2_lp24c")]
+position = Vector2(410, 439.5)
+
+[node name="Player 5" parent="." instance=ExtResource("2_lp24c")]
+position = Vector2(464, 537.5)
+
+[node name="Player 6" parent="." instance=ExtResource("2_lp24c")]
+position = Vector2(351, 552.5)
+
+[node name="Player 7" parent="." instance=ExtResource("2_lp24c")]
+position = Vector2(562, 429.5)
+
+[node name="Player7" parent="." instance=ExtResource("3_l5t5t")]
+position = Vector2(344, 206)
+
+[node name="Player8" parent="." instance=ExtResource("3_l5t5t")]
+position = Vector2(468, 231)
+
+[node name="Player9" parent="." instance=ExtResource("3_l5t5t")]
+position = Vector2(384, 313)
+
+[node name="Player10" parent="." instance=ExtResource("3_l5t5t")]
+position = Vector2(401, 236)

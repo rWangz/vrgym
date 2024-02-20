@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://ctkiehm4l5yn4"]
+
+[ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_w4c8n"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_qf4ou"]
+top_radius = 0.25
+bottom_radius = 0.25
+height = 1.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_22c5x"]
+height = 0.2
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_iwdvo"]
+height = 0.62
+radius = 0.03
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_xthiq"]
+height = 0.2
+
+[node name="RigidBody3D" type="RigidBody3D"]
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.048, 0, 0, 0, -3.49691e-08, -0.048, 0, 0.8, -2.09815e-09, 0, 0, 0)
+mesh = SubResource("CylinderMesh_qf4ou")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-09, -1, 0, 0.1, -4.37114e-08, 0, 0, 0.352302)
+mesh = SubResource("CylinderMesh_qf4ou")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-09, -1, 0, 0.1, -4.37114e-08, 0, 0, -0.355063)
+mesh = SubResource("CylinderMesh_qf4ou")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, -2.18557e-08, -0.5, 0, 0.5, -2.18557e-08, 0, 0, 0.352302)
+shape = SubResource("CylinderShape3D_22c5x")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+shape = SubResource("CylinderShape3D_iwdvo")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, -2.18557e-08, -0.5, 0, 0.5, -2.18557e-08, 0, 0, -0.355063)
+shape = SubResource("CylinderShape3D_xthiq")
+
+[node name="PickableObject" parent="." instance=ExtResource("1_w4c8n")]

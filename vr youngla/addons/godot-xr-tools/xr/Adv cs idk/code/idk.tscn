@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://be3yipehhwe84"]
+
+[ext_resource type="Material" uid="uid://dmbx06wf240rc" path="res://Materials/purple.tres" id="1_7hu3l"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_i03i6"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_b7tfx"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_q3vgt"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_7hu3l")
+mesh = SubResource("CylinderMesh_i03i6")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0275269, 2.9825, -0.00861359)
+material_override = ExtResource("1_7hu3l")
+mesh = SubResource("CapsuleMesh_b7tfx")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, -6.55671e-08, -1.5, 0, 1.5, -6.55671e-08, 0.176819, 1.76324, 0.0894775)
+material_override = ExtResource("1_7hu3l")
+mesh = SubResource("PrismMesh_q3vgt")

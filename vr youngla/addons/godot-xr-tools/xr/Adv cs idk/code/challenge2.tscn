@@ -1,0 +1,56 @@
+[gd_scene load_steps=7 format=3 uid="uid://5ioajpjr6tb7"]
+
+[ext_resource type="Material" uid="uid://bdb5hegvlkr82" path="res://Materials/Test_Material.tres" id="1_daypb"]
+[ext_resource type="Material" uid="uid://bijyre5fjnhy1" path="res://Materials/trans_blue.tres" id="2_4tj8r"]
+[ext_resource type="Material" uid="uid://dmbx06wf240rc" path="res://Materials/purple.tres" id="2_6cgin"]
+[ext_resource type="Material" uid="uid://0qiibw346ijj" path="res://Materials/face.tres" id="4_noyru"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_a1rcu"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_c2m1x"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="snowman" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="snowman"]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 3.67195, -0.0704346, 0.403687)
+material_override = ExtResource("1_daypb")
+mesh = SubResource("SphereMesh_a1rcu")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="snowman"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.53508, 2.16931, 2.0531)
+material_override = ExtResource("1_daypb")
+mesh = SubResource("SphereMesh_a1rcu")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="snowman"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.56883, 2.16931, 2.0531)
+material_override = ExtResource("2_4tj8r")
+mesh = SubResource("SphereMesh_a1rcu")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="snowman"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 12.7857, 2.16931, 2.03088)
+material_override = ExtResource("2_6cgin")
+mesh = SubResource("SphereMesh_a1rcu")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="snowman"]
+transform = Transform3D(3, 0, 0, 0, 2.00319, -2.23321, 0, 2.23321, 2.00319, 12.7857, -3.09998, 2.03088)
+material_override = ExtResource("4_noyru")
+mesh = SubResource("SphereMesh_a1rcu")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="snowman"]
+transform = Transform3D(5, 0, 0, 0, 0.353553, -0.353553, 0, 0.353553, 0.353553, 3.26616, 2.04773, 2.06421)
+material_override = ExtResource("1_daypb")
+mesh = SubResource("BoxMesh_c2m1x")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="snowman"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 3.35272, 3.62671, 3.59741)
+material_override = ExtResource("1_daypb")
+mesh = SubResource("SphereMesh_a1rcu")
+skeleton = NodePath("../..")

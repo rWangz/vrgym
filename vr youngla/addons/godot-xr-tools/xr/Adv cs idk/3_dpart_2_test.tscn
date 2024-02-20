@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://beo8br25uxnpu"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_4ebdf"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_31a5a"]
+
+[node name="3dpart2test" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0515475, 0)
+mesh = SubResource("SphereMesh_4ebdf")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.933924, 0.0819023, 0.347963, 0, -0.973399, 0.229116, 0.357472, -0.213976, -0.909081, 2.86444, 0.989017, -5.00964)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(99.9992, -0.347929, 0.217046, 0.348341, 99.9992, -0.189808, -0.216384, 0.190563, 99.9996, 11.1185, -3.22986, -14.0027)
+mesh = SubResource("PlaneMesh_31a5a")
